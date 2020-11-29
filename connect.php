@@ -9,7 +9,7 @@ $dbpassword = "";
 $dbname = "lab12";
 
 
-// Create connection
+// Creating the connection
 $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
 
 
@@ -21,7 +21,7 @@ else{
 $sql = "INSERT INTO login (username, password)
 values ('$username','$password')";
 if ($conn->query($sql)){
-echo "New record is inserted sucessfully";
+echo "New record has been inserted sucessfully";
 }
 else{
 echo "Error: ". $sql ."
